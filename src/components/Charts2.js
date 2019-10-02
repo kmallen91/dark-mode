@@ -1,10 +1,10 @@
 import React from "react";
 import Chart from "./Chart";
 
-const Charts = ({ coinData, page2 }) => {
+const Charts = ({ page2 }) => {
   return (
     <div className="charts">
-      {coinData.map(coin => (
+      {page2.map(coin => (
         <div className="chart__container" key={coin.name}>
           <h2 className="coin__title">{coin.name}</h2>
           <h4 className="coin__symbol">{coin.symbol}</h4>
